@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',async()=>{const data=await TRP.list('news');const el=document.getElementById('newsList');el.innerHTML=data.length?data.map(TRP.newsCard).join(''):TRP.empty('berita');});

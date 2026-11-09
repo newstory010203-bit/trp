@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',async()=>{const category=location.pathname.toLowerCase().includes('gl-series')?'GL':'BL';const data=await TRP.list('series',{category});const el=document.getElementById('seriesList');el.innerHTML=data.length?data.map(TRP.seriesCard).join(''):TRP.empty(`serial ${category}`);});

@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',async()=>{const s=await TRP.settings();const el=document.getElementById('aboutContent');if(el)el.textContent=s.about_content||'';});

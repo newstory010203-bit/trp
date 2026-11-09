@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',async()=>{const data=await TRP.list('artists');const el=document.getElementById('artistsList');el.innerHTML=data.length?data.map(TRP.artistCard).join(''):TRP.empty('artis');});
